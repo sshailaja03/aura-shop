@@ -119,19 +119,26 @@
 
 @layer components {
   .glass {
-    @apply bg-glass/8 backdrop-blur-md border border-glass-border/15 shadow-glass rounded-2xl;
+    @apply backdrop-blur-md border shadow-glass rounded-2xl;
+    background: hsl(var(--glass-bg) / 0.08);
+    border-color: hsl(var(--glass-border) / 0.15);
   }
 
   .glass-strong {
-    @apply bg-glass/15 backdrop-blur-lg border border-glass-border/20 shadow-glass rounded-2xl;
+    @apply backdrop-blur-lg border shadow-glass rounded-2xl;
+    background: hsl(var(--glass-bg) / 0.15);
+    border-color: hsl(var(--glass-border) / 0.20);
   }
 
   .glass-card {
-    @apply bg-glass/10 backdrop-blur-md border border-glass-border/12 shadow-glass rounded-2xl p-4 transition-all duration-150;
+    @apply backdrop-blur-md border shadow-glass rounded-2xl p-4 transition-all duration-150;
+    background: hsl(var(--glass-bg) / 0.10);
+    border-color: hsl(var(--glass-border) / 0.12);
   }
 
   .glass-card:hover {
-    @apply bg-glass/18 shadow-lg;
+    @apply shadow-lg;
+    background: hsl(var(--glass-bg) / 0.18);
   }
 
   .mesh-gradient {
